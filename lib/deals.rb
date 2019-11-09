@@ -9,6 +9,7 @@ class AppleDeals::Deals
       4. Beats Studio3 Wireless Headphones - Porcelain Rose (Renewed)
      
     DOC
+    
     deal_1 = Deals.new 
     deal_1.name = "New Apple iPad (10.2-Inch, Wi-Fi, 128GB) - Silver (Latest Model)"
     deal_1.price = "$399.98"

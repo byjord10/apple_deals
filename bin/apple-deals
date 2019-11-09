@@ -3,5 +3,4 @@
 require './lib/apple_deals'
 
 
-
 AppleDeals::CLI.new.call 

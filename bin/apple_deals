@@ -1,7 +1,0 @@
-#!/usr/bin/env ruby 
-
-require ' ./lib/apple_deals '
-
-AppleDeals::CLI.new.call
-
-puts "Hello World"

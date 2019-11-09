@@ -8,10 +8,11 @@ class AppleDeals::CLI
   end 
   
   def deal_list 
-    puts "Hello, here is a list of Apple products on sale this week."
+    puts "Hello, here is a list of Apple products that are on sale this week."
     @deals = AppleDeals::Deals.today 
-    @deals.each.with_index(1) do |deal, i|
-      pts "#{i}.#{deal.name} - #{deal.price} - #{deal.availability}"
+    @deals.each.with_index(1) do |deals, i|
+      
+      puts "#{i}.#{deals.name} - #{deals.price} - #{deals.availability}"
     end
   end 
   

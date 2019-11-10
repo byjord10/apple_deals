@@ -1,6 +1,7 @@
-#!/usr/bin/env ruby 
+#!/usr/bin/env ruby
 
-require './lib/apple_deals'
+#require './lib/apple_deals'
+require "bundler/setup"
+require "apple_deals"
 
-
-AppleDeals::CLI.new.call 
+AppleDeals::CLI.new.call

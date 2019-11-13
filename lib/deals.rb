@@ -2,13 +2,10 @@ class AppleDeals::Deals
   attr_accessor :name, :price, :availability, :url
 
   def self.today
-  #  puts <<-DOC
-    #  1. New Apple MacBook Air (13-inch, 1.6GHz dual-core Intel Core i5, 8GB RAM, 128GB) - Space Gray
-    #  2. New Apple MacBook Pro (13-inch, 8GB RAM, 256GB Storage) - Space Gray
-    #  3. New Apple MacBook Pro (15-inch, 16GB RAM, 256GB Storage) - Space Gray
-    #  4.Apple Magic Mouse 2 (Wireless, Rechargable) - Space Gray
+    self.scrape_deals
+  end
 
-  #  DOC
+  def self.scrape_deals
 
     deal_1 = self.new
     deal_1.name = "New Apple MacBook Air (13-inch, 1.6GHz dual-core Intel Core i5, 8GB RAM, 128GB) - Space Gray"

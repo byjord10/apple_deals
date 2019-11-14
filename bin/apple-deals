@@ -4,4 +4,6 @@
 require "bundler/setup"
 require "apple_deals"
 
+require 'nokogiri'
+
 AppleDeals::CLI.new.call
